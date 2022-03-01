@@ -4,11 +4,15 @@ from speech_to_text import speech_to_text
 from translate_text import translate_text
 from audio_to_speaker import audio_to_speaker
 
-filename = "output"
-translated_text = 'sample.txt'
 # outputlang = "en"
 # langs = ['es', 'en', 'fr']
 
+def main():
+  FILE_NAME = "output"
+  INPUT_TEXT = 'sample.txt'
+  text2speech(INPUT_TEXT)
+  play_audio(FILE_NAME)
+
 if __name__ == "__main__":
-    text2speech(translated_text, outputlang)
-    play_audio(filename + ".mp3")
+  main()
+
