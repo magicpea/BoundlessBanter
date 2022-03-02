@@ -7,4 +7,4 @@ def audio_to_speaker(file_name):
   # song.export(newName, format = "wav")
   wav_file = AudioSegment.from_file(file = file_name,
                                   format = "wav")
-  play(audio)
+  play(wav_file)
